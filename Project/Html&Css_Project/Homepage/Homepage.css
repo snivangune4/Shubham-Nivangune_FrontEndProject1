@@ -1,0 +1,164 @@
+body{
+    background-color: white;
+}
+header{
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    font-size: xx-large;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.685);
+}
+footer{
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    padding: 20px;
+    position: relative;
+    bottom: 0%;
+    text-align: center;
+}
+#navigate{
+    position: sticky;
+    top: 0%;
+    z-index: 1;
+}
+
+.menu{
+    margin: 0%;
+    background-color: rgb(0, 0, 0, 0.5);
+}
+.menu li a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+.menu li{
+    padding: 10px;
+    display: inline-block;
+}
+.menu li:hover{
+    background-color: rgba(0, 0, 0, 0.7);;
+}
+
+.menu li:nth-last-child(3):hover #dropdown-1, .menu li:nth-last-child(2):hover #dropdown-2{
+    display: block;
+}
+
+#dropdown-1, #dropdown-2{
+    position: absolute;
+    top:40px;
+    background-color: grey;
+    color: black;
+    display: none;
+    padding: 5px;
+    margin: 0;
+}
+
+#dropdown-1 li, #dropdown-2 li{
+    display: block;
+}
+
+#dropdown-1 li a,#dropdown-2 li a{
+    color: rgb(10, 1, 255);
+}
+
+#info_offers{
+    height:400px;
+    margin: 10px;
+    animation-name: image;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes image {
+    0%{background-image: url(Animation/ani1.jpg);
+       background-size: 100% 400px;
+       border: 5px solid steelblue; 
+       background-repeat: no-repeat;
+       animation-delay: 5s;
+    }
+    20%{background-image: url(Animation/ani2.png);
+        background-repeat: no-repeat;
+        background-size: 100% 400px;
+        border: 5px solid steelblue;
+        animation-delay: 5s;
+    }
+    40%{background-image: url(Animation/ani3.jpg);
+        background-repeat: no-repeat;
+        border: 5px solid steelblue;
+        background-size: 100% 400px;
+        animation-delay: 5s;
+    }
+    60%{background-image: url(Animation/ani4.jpg);
+        background-repeat: no-repeat;
+        border: 5px solid steelblue;
+        background-size: 100% 400px;
+        animation-delay: 5s;
+    }
+    80%{background-image: url(Animation/ani5.jpg);
+        background-repeat: no-repeat;
+        border: 5px solid steelblue;
+        background-size: 100% 400px;
+        animation-delay: 5s;
+    }
+    
+}
+
+.Corona, .Diabetes{
+    position: relative;
+    border-radius: 10px;
+    margin: 5px;
+    width: 250px;
+    height: 300px;
+    border: 2px solid green;
+    display: inline-block;
+    background-color: rgba(145, 145, 226, 0.3);
+    font-size: 20px;
+}
+
+#Corona_Care, #Diabetes_Care{
+    display: inline-block;
+}
+
+.Corona img, .Diabetes img{
+    border-radius: 10px;
+    width: 240px;
+    height: 150px;
+    align-self: center;
+    padding: 5px;
+}
+
+.Corona p, .Diabetes p{
+    margin:5px
+}
+
+button{
+    margin-top: 5px;
+    width: 200px;
+    padding: 5px;
+    font-size: 15px;
+    border-radius: 5px;
+    color: orange;
+    background-color: rgba(85, 85, 214, 0.607);
+    margin-left: 20px;
+    font-weight: bold;
+    border-width:3px;
+    border-color: blue;
+}
+
+button:active{
+    background-color: rgb(250, 234, 230) ;
+    border-color: rgb(0, 255, 76);
+}
+
+.Corona img:hover, .Diabetes img:hover{
+    width: 260px;
+    height: 170px;
+}
+
+.Corona:hover, .Diabetes:hover{
+    width: 280px;
+    height: 320px;
+}
